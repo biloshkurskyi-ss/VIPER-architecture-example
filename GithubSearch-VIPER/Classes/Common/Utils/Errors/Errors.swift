@@ -16,6 +16,7 @@ enum LocalPersistenceError: Error {
 
 enum RemotePersistenceError: Error {
     case undefined
+    case cancelled
     case missingResult(String)
     case missingConnection
 }

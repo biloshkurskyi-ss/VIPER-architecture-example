@@ -20,6 +20,6 @@ protocol RemoteDataManagerInputProtocol: class {
 protocol RemoteDataManagerOutputProtocol: class {
     
     // REMOTEDATAMANAGER -> INTERACTOR
-    func onRepositoriesRetrieved(_ name: String, _ firstBunch: [RepositoryModel]?, _ secondBunch: [RepositoryModel]?)
+    func onRepositoriesRetrieved(_ name: String, _ bunch: [RepositoryModel])
     func onError(error: Error)
 }

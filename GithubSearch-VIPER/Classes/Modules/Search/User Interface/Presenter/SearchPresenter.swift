@@ -65,6 +65,8 @@ extension SearchPresenter: SearchInteractorOutputProtocol {
             userInterface?.showErrorPopUp(error: "Missing result for repo: \(name)")
         case RemotePersistenceError.missingConnection:
             userInterface?.showErrorPopUp(error: "Failed internet connection.\nPlease try again later.")
+        case RemotePersistenceError.cancelled:
+            userInterface?.showErrorPopUp(error: "Request cancelled.")
         default:
             userInterface?.showErrorPopUp(error: "Change repository name or try again later")
         }

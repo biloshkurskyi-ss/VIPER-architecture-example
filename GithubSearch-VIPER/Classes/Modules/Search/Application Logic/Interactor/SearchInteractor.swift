@@ -56,8 +56,7 @@ class SearchInteractor: SearchInteractorInputProtocol {
 
 extension SearchInteractor: RemoteDataManagerOutputProtocol {
 
-    func onRepositoriesRetrieved(_ name: String, _ firstBunch: [RepositoryModel]?, _ secondBunch: [RepositoryModel]?) {
-        let bunch = [firstBunch, secondBunch].flatMap { $0 }.flatMap { $0 }
+    func onRepositoriesRetrieved(_ name: String, _ bunch: [RepositoryModel]) {
         if !bunch.isEmpty {
             do {
                 try localDatamanager?.saveRepositories(bunch, for: name)
@@ -70,7 +69,7 @@ extension SearchInteractor: RemoteDataManagerOutputProtocol {
             presenter?.onError(RemotePersistenceError.missingResult(name))
         }
     }
-    
+        
     func onError(error: Error) {
         presenter?.onError(error)
     }

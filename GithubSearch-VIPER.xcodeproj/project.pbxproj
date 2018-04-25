@@ -45,6 +45,8 @@
 		A59C4762202CAEFB00EF2004 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59C4761202CAEFB00EF2004 /* AppDependencies.swift */; };
 		A59C476D202CB11600EF2004 /* SearchWareframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59C476C202CB11600EF2004 /* SearchWareframe.swift */; };
 		A59C476F202CB28E00EF2004 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59C476E202CB28E00EF2004 /* SearchViewController.swift */; };
+		C556A3C62087040C00EED59E /* NetworkSearchOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C556A3C52087040C00EED59E /* NetworkSearchOperation.swift */; };
+		C556A3C82087263300EED59E /* AsynchronousOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C556A3C72087263300EED59E /* AsynchronousOperation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +91,8 @@
 		A59C4761202CAEFB00EF2004 /* AppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
 		A59C476C202CB11600EF2004 /* SearchWareframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchWareframe.swift; sourceTree = "<group>"; };
 		A59C476E202CB28E00EF2004 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		C556A3C52087040C00EED59E /* NetworkSearchOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSearchOperation.swift; sourceTree = "<group>"; };
+		C556A3C72087263300EED59E /* AsynchronousOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsynchronousOperation.swift; sourceTree = "<group>"; };
 		CC5A5E56B61F5A6A6C823423 /* Pods-GithubSearch-VIPER.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubSearch-VIPER.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GithubSearch-VIPER/Pods-GithubSearch-VIPER.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -186,6 +190,7 @@
 		A52A03DA20304D90003CD1FB /* Remote */ = {
 			isa = PBXGroup;
 			children = (
+				C556A3C4208703F700EED59E /* Entities */,
 				A52A03DD20304DBA003CD1FB /* RemoteDataManager.swift */,
 				A52A03E4203050B0003CD1FB /* RemoteDataManagerProtocol.swift */,
 			);
@@ -407,6 +412,15 @@
 			path = Wireframe;
 			sourceTree = "<group>";
 		};
+		C556A3C4208703F700EED59E /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				C556A3C52087040C00EED59E /* NetworkSearchOperation.swift */,
+				C556A3C72087263300EED59E /* AsynchronousOperation.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 		D460658352AC7BDF4A37C6BB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -574,10 +588,12 @@
 				A52A03E320304F87003CD1FB /* Errors.swift in Sources */,
 				A55458E32031ED5C0085B519 /* PreviewViewInterface.swift in Sources */,
 				A52A03E920305961003CD1FB /* API.swift in Sources */,
+				C556A3C82087263300EED59E /* AsynchronousOperation.swift in Sources */,
 				A52A03DC20304DAF003CD1FB /* LocalDataManager.swift in Sources */,
 				A59C4762202CAEFB00EF2004 /* AppDependencies.swift in Sources */,
 				A55458E12031EB290085B519 /* PreviewViewController.swift in Sources */,
 				A52A03BF202F0255003CD1FB /* SearchViewInterface.swift in Sources */,
+				C556A3C62087040C00EED59E /* NetworkSearchOperation.swift in Sources */,
 				A55458E52031FBE10085B519 /* PreviewPresentationTransition.swift in Sources */,
 				A52ECDDC2030FED600CC5572 /* Repository+CoreDataClass.swift in Sources */,
 				A59C474E202CAD2300EF2004 /* GithubSearch_VIPER.xcdatamodeld in Sources */,

@@ -1,4 +1,4 @@
-# Swift-VIPER architecture example used Github search
+# Swift-VIPER architecture example used Github API
 
 ### Main project requirements:
 
@@ -11,3 +11,7 @@
   - cut string fragment to 30 letters
   - add an opportunity to review the results in offline mode
   - open browser with repository information as a modal window
+
+### Article: [VIPER Architecture Example In Swift] 
+
+[VIPER Architecture Example In Swift]: <https://medium.com/@biloshkurskyi.ss/viper-architecture-example-in-swift-e4aa50abc93c>
